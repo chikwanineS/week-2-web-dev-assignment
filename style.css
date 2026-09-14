@@ -1,0 +1,185 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 30px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+.add-expense-section,
+.expenses-section,
+.instructions,
+.video-section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+/* Negation pseudo-class */
+input:not([type="submit"]) {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Select styling */
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+/* Focus pseudo-class */
+input:focus,
+select:focus {
+    outline: 2px solid #3498db;
+    border-color: #3498db;
+}
+
+
+/* Button */
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+    /* Required pointer cursor */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+/* Expense table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+
+/* Descendant selector */
+.expenses-section td,
+.expenses-section th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Table header */
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+/* Position-based pseudo-class */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* First row selector */
+tbody tr:first-child {
+    font-weight: bold;
+}
+
+
+/* Table row hover */
+tbody tr:hover {
+    background-color: #dfefff;
+}
+
+
+/* Details and summary */
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+}
+
+details p {
+    line-height: 1.6;
+}
+
+
+/* Video */
+.video-section {
+    text-align: center;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
